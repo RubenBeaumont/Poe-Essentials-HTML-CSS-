@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  background-color: #262626;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Header details*/
+.main-menu-header {
+  text-align: center;
+  background-color: #808080;
+  border: 2px solid #D6D9DC;
+  border-radius: 3px;
+
+  width: 100%;
+  margin-bottom: 40px 0;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-menu-header a:link,
+.main-menu-header a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.main-menu-header a:hover,
+.main-menu-header a:visited:hover {
+  color: #565656;
+}
+
+.main-header-button {
+  font-size: 40px;
+}
+.header-button {
+  font-size: 25px;
+}
+
+
+/*Grid*/
+.grid-container {
+  background-color: #262626;
+  border-radius: 5px;
+
+  width: 95%;
+  margin: 30px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.grid-box {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 20px;
+  width: 400px;
+  height: 200px;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  position: relative;
+  text-align: left;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.grid-text {
+  position: absolute;
+  top: 5px;
+  left: 14px;
+}
+.grid-text h1 {
+  font-size: 26px;
+}
+.grid-text p {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*Link and border color*/
+.grid a:link,
+.grid a:visited {
+  text-decoration: none;
+  color: #EFEEF0;
+}
+
+.grid a:hover,
+.grid a:hover:visited {
+  color: #822DB7;
+}
+
+.grid-box:hover,
+.grid-box:hover:visited {
+  border: 3px solid #822DB7;
+  box-shadow: 0 0 10px #954DC1;
+}
+
+@media only screen and (min-width: 1200px) {
+  {}
+}
